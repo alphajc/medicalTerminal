@@ -1,0 +1,7 @@
+#include "bloodgauge.h"
+
+BloodGauge::BloodGauge(QWidget *parent) : QWidget(parent)
+{
+
+}
+

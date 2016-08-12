@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <widget class="QPushButton" name="selectPushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>350</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addPushButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>350</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加记录</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="selectLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>350</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="downPushButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>350</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按编号降序排列</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="notUpdatePushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>350</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>撤销修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitPushButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>350</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交修改</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>姓名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deletePushButton">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>350</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除选中行</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="newPushButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>350</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>更新</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="upPushButton">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>350</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按编号升序排列</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>896</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView{
+	selection-background-color: 
+		qlineargradient(x1:0, y1:0,
+			x2:0.5, y2:0.5,
+			stop:0 rgb(240, 255, 237), 
+			stop: 1 rgb(216, 233, 255));
+}
+
+QTableView QTableCornerButton::section {
+	background-color: qlineargradient(x1:0, y1:0,
+		x2:0.5, y2:0.5,
+		stop:0 rgb(240, 255, 237), 
+		stop: 1 rgb(216, 233, 255));
+	border:2px solid rgb(245, 244, 255)
+}
+QTabWidget::pane { /* The tab widget frame */ 
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,  
+                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,  
+                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);    
+    border-top: 2px solid #C2C7CB;  
+    position: absolute;  
+    top: -2px;  
+}  
+/* Style the tab using the tab sub-control. Note that 
+    it reads QTabBar _not_ QTabWidget */  
+QTabBar::tab {  
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,  
+        stop: 0 #fafafa, stop: 0.4 #f4f4f4,  
+        stop: 0.5 #e7e7e7, stop: 1.0 #fafafa); 
+    border: 2px solid #C4C4C3;  
+    border-bottom-color: #C2C7CB; /* same as the pane color */  
+    border-top-left-radius: 4px;  
+    border-top-right-radius: 4px;
+    min-width: 8ex;  
+    padding: 2px;
+	height:25px;
+	width:60px;
+	font: 16pt &quot;新宋体&quot;;
+}  
+  
+QTabBar::tab:selected, QTabBar::tab:hover {   
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,  
+        stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,  
+        stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);  
+}  
+  
+QTabBar::tab:selected {  
+    border-color: #9B9B9B;  
+    border-bottom-color: 2px solid white; /* same as pane color */  
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="doctorTab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QTableView" name="doctorTable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>896</width>
+       <height>290</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="patientTab">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QTableView" name="patientTable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>896</width>
+       <height>290</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	border-radius:10px
+}</string>
+  </property>
+  <widget class="QLabel" name="TitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>3</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 0, 0);
+border:1px solid black</string>
+   </property>
+   <property name="text">
+    <string>HMT</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>31</y>
+     <width>220</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page1">
+    <widget class="QLabel" name="PatientInfoLabel">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>160</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>患者信息</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CalculatorLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>计算器</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DoctorIntrButton">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>0</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/doctor_64px_26612_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CalculatorButton">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>184</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/calculator_64px_26896_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MapLabel">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>250</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>楼宇平面图</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BloodButton">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>90</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/blood_pressure.png) no-repeat center</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BloodLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>158</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>体检</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MapButton">
+     <property name="geometry">
+      <rect>
+       <x>127</x>
+       <y>184</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/map_64px_1185656_easyicon.net.png) no-repeat center</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PatientInfoButton">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>90</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/patient_64px_27284_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DoctorIntrLabel">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>70</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>医生简介</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="personalIntrButton">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>0</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/information_personal_64px_12875_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalIntrLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>70</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>个人信息</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page2">
+    <widget class="QPushButton" name="AlarmButton">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>0</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/alarm_clock_64px_568790_easyicon.net.png) no-repeat center</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PlayerButton">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>0</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/Play_Music_64px_1183750_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AlarmLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>闹钟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PlayerLabel">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>70</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>音乐播放器</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CalendarLabel">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>160</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>日历</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CalendarButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/office_calendar_64px_26184_easyicon.net.png) no-repeat</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="memorandumButton">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>90</y>
+       <width>72</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(0,0,0,50) url(:/img/notepad_54.660944206009px_1185664_easyicon.net.png) no-repeat center</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="memoradumLabel">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>160</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>备忘录</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="PreviousButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>300</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0) url(:/img/go_previous_5_16px_539832_easyicon.net.png) no-repeat</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NextButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>300</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0) url(:/img/go_next_5_16px_539825_easyicon.net.png) no-repeat</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TimeLabel">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>3</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>08:28:34 Mon</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>3</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0) url(:/img/out_sign_16px_14315_easyicon.net.png) no-repeat center</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

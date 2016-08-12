@@ -1,0 +1,17 @@
+#ifndef BLOODGAUGE_H
+#define BLOODGAUGE_H
+
+#include <QWidget>
+
+class BloodGauge : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit BloodGauge(QWidget *parent = 0);
+
+signals:
+
+public slots:
+};
+
+#endif // BLOODGAUGE_H

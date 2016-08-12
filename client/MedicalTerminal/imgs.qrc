@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/blood_pressure.png</file>
+        <file>img/calculator_64px_26896_easyicon.net.png</file>
+        <file>img/doctor_64px_26612_easyicon.net.png</file>
+        <file>img/patient_64px_27284_easyicon.net.png</file>
+        <file>img/map_64px_1185656_easyicon.net.png</file>
+        <file>img/go_next_5_16px_539825_easyicon.net.png</file>
+        <file>img/go_previous_5_16px_539832_easyicon.net.png</file>
+        <file>img/head_male_man_user_72px_1578_easyicon.net.png</file>
+        <file>img/alarm_clock_64px_568790_easyicon.net.png</file>
+        <file>img/Play_Music_64px_1183750_easyicon.net.png</file>
+        <file>img/office_calendar_64px_26184_easyicon.net.png</file>
+        <file>img/icon.ico</file>
+        <file>img/login.png</file>
+        <file>img/splash.jpg</file>
+        <file>img/personalPicture.jpg</file>
+        <file>img/personalReturn.png</file>
+        <file>img/doctorPt.png</file>
+        <file>img/pause.png</file>
+        <file>img/play.png</file>
+        <file>img/skipBackward.png</file>
+        <file>img/skipForward.png</file>
+        <file>img/stop.png</file>
+        <file>img/notepad_54.660944206009px_1185664_easyicon.net.png</file>
+        <file>img/out_sign_16px_14315_easyicon.net.png</file>
+        <file>img/information_personal_64px_12875_easyicon.net.png</file>
+        <file>img/files_22px_1163352_easyicon.net.png</file>
+        <file>img/list_22px_1175613_easyicon.net.png</file>
+        <file>img/PLayer_back_24px_1184881_easyicon.net.png</file>
+        <file>img/music_back.png</file>
+        <file>img/music_hidden.png</file>
+        <file>img/bg01.jpg</file>
+        <file>img/bg02.jpg</file>
+        <file>img/bg03.jpg</file>
+        <file>img/bg4.png</file>
+        <file>img/bg05.jpg</file>
+        <file>img/bg06.jpg</file>
+        <file>img/bg07.jpg</file>
+        <file>img/bg08.jpg</file>
+        <file>img/bg09.jpg</file>
+        <file>img/bg10.jpg</file>
+        <file>img/bg11.jpg</file>
+        <file>img/sbg.jpg</file>
+        <file>img/sbg.png</file>
+    </qresource>
+</RCC>
